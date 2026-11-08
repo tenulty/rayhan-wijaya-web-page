@@ -10,79 +10,6 @@ import GithubIcon from "../components/GithubIcon.astro";
     >
         <img
             class="rounded-t-lg hover:opacity-70 transition-opacity"
-            src="/screenshots/mobile-data-scraper-json.png"
-        />
-    </a>
-
-    <hr class="border-gray-500" />
-
-    <div class="p-3">
-        <div class="flex gap-3 items-center">
-            <h3 class="whitespace-nowrap">mobile-data-scraper</h3>
-            <div title="Private project">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="w-5 h-5 fill-red-400"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M3.28 2.22a.75.75 0 00-1.06 1.06l14.5 14.5a.75.75 0 101.06-1.06l-1.745-1.745a10.029 10.029 0 003.3-4.38 1.651 1.651 0 000-1.185A10.004 10.004 0 009.999 3a9.956 9.956 0 00-4.744 1.194L3.28 2.22zM7.752 6.69l1.092 1.092a2.5 2.5 0 013.374 3.373l1.091 1.092a4 4 0 00-5.557-5.557z"
-                        clip-rule="evenodd">
-                    </path>
-
-                    <path d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z">
-                    </path>
-                </svg>
-            </div>
-        </div>
-
-        <div class="p-2"></div>
-
-        <div class="flex flex-wrap gap-3">
-            <span class="rounded-full px-3 bg-gray-700">selenium</span>
-            <span class="rounded-full px-3 bg-gray-700">fastify</span>
-            <span class="rounded-full px-3 bg-gray-700">node.js</span>
-        </div>
-
-        <div class="p-2"></div>
-
-        <p class="text-gray-400">
-            A backend service for a company I help that scrapes mobile data
-            realtime prices from suppliers in a configurable manner by parsing
-            and using a JSON config, and finally putting the prices to display
-            in an internal selling system, which the company currently uses.
-        </p>
-
-        <div class="p-2"></div>
-
-        <p class="text-gray-400">
-            The configuration describes the pages of a supplier's dashboard for
-            the service to scrape. Along with an optional condition that
-            denotes whether each page is finished loading, and credentials for
-            the login page. For each element, they are described by a list of
-            query selectors that can even fallback to the next selector in the
-            list if the first one fails.
-        </p>
-
-        <div class="p-2"></div>
-
-        <p class="text-gray-400">
-            If you're interested in the technical details, I'll create a blog
-            post discussing about this shortly!
-        </p>
-    </div>
-</div>
-
-<div class="rounded-lg bg-zinc-800 border border-gray-500">
-    <a
-        class="hover:cursor-zoom-in"
-        href="/screenshots/mobile-data-scraper.png"
-        target="_blank"
-    >
-        <img
-            class="rounded-t-lg hover:opacity-70 transition-opacity"
             src="/screenshots/mobile-data-transaction.png"
         />
     </a>
@@ -102,10 +29,13 @@ import GithubIcon from "../components/GithubIcon.astro";
                     <path
                         fill-rule="evenodd"
                         d="M3.28 2.22a.75.75 0 00-1.06 1.06l14.5 14.5a.75.75 0 101.06-1.06l-1.745-1.745a10.029 10.029 0 003.3-4.38 1.651 1.651 0 000-1.185A10.004 10.004 0 009.999 3a9.956 9.956 0 00-4.744 1.194L3.28 2.22zM7.752 6.69l1.092 1.092a2.5 2.5 0 013.374 3.373l1.091 1.092a4 4 0 00-5.557-5.557z"
-                        clip-rule="evenodd">
+                        clip-rule="evenodd"
+                    >
                     </path>
 
-                    <path d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z">
+                    <path
+                        d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z"
+                    >
                     </path>
                 </svg>
             </div>
@@ -114,6 +44,9 @@ import GithubIcon from "../components/GithubIcon.astro";
         <div class="p-2"></div>
 
         <div class="flex flex-wrap gap-3">
+            <span class="rounded-full px-3 bg-gray-700">
+                Frontend + Backend
+            </span>
             <span class="rounded-full px-3 bg-gray-700">htmx</span>
             <span class="rounded-full px-3 bg-gray-700">golang</span>
             <span class="rounded-full px-3 bg-gray-700">wkhtmltopdf</span>
@@ -122,10 +55,16 @@ import GithubIcon from "../components/GithubIcon.astro";
         <div class="p-2"></div>
 
         <p class="text-gray-400">
-            Get an overview of transactions by comparing price differences from
-            two sources, the supplier's realtime price, and a selling system
-            with fixed prices. Including other "views" to see transactions in
-            greater detail with the ability to export as a PDF.
+            See an overview of the differences in transaction nominal from a
+            mobile data supplier's perspective, and a selling system's
+            perspective.
+        </p>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            It includes other data views to see transactions in greater detail,
+            and the ability to export as a PDF.
         </p>
     </div>
 </div>
@@ -133,7 +72,7 @@ import GithubIcon from "../components/GithubIcon.astro";
 <div class="rounded-lg bg-zinc-800 border border-gray-500">
     <a
         class="hover:cursor-zoom-in"
-        href="/screenshots/mobile-data-scraper-json.png"
+        href="/screenshots/mobile-data-scraper.png"
         target="_blank"
     >
         <img
@@ -146,7 +85,7 @@ import GithubIcon from "../components/GithubIcon.astro";
 
     <div class="p-3">
         <div class="flex gap-3 items-center">
-            <h3 class="whitespace-nowrap">mobile-data-scraper (2)</h3>
+            <h3 class="whitespace-nowrap">realtime-price-scraper</h3>
             <div title="Private project">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +101,8 @@ import GithubIcon from "../components/GithubIcon.astro";
                     </path>
 
                     <path
-                        d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z">
+                        d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z"
+                    >
                     </path>
                 </svg>
             </div>
@@ -171,6 +111,9 @@ import GithubIcon from "../components/GithubIcon.astro";
         <div class="p-2"></div>
 
         <div class="flex flex-wrap gap-3">
+            <span class="rounded-full px-3 bg-gray-700">
+                Frontend + Backend
+            </span>
             <span class="rounded-full px-3 bg-gray-700">selenium</span>
             <span class="rounded-full px-3 bg-gray-700">fastify</span>
             <span class="rounded-full px-3 bg-gray-700">react</span>
@@ -180,16 +123,81 @@ import GithubIcon from "../components/GithubIcon.astro";
 
         <p class="text-gray-400">
             Scrape the realtime prices of mobile data from three suppliers, and
-            export to XLSX as an "internal" or "external" spreadsheet. This
-            data is obtained from the supplier's dashboards and proved to be
-            effective in internal operation by the company's admins.
+            export to XLSX. This app was proved to be effective in internal
+            operations by the company's admins.
         </p>
 
         <div class="p-2"></div>
 
         <p class="text-gray-400">
-            All with a responsive UI and scrollable table with a sticky header
-            and red/green indicators on the price.
+            The app provides a responsive UI, a scrollable table with sticky
+            header, and color indicators on the price.
+        </p>
+    </div>
+</div>
+
+<div class="rounded-lg bg-zinc-800 border border-gray-500">
+    <a
+        class="hover:cursor-zoom-in"
+        href="/screenshots/mobile-data-scraper-json.png"
+        target="_blank"
+    >
+        <img
+            class="rounded-t-lg hover:opacity-70 transition-opacity"
+            src="/screenshots/mobile-data-scraper-json.png"
+        />
+    </a>
+
+    <hr class="border-gray-500" />
+
+    <div class="p-3">
+        <div class="flex gap-3 items-center">
+            <h3 class="whitespace-nowrap">mobile-data-scraper-2</h3>
+            <div title="Private project">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-5 h-5 fill-red-400"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M3.28 2.22a.75.75 0 00-1.06 1.06l14.5 14.5a.75.75 0 101.06-1.06l-1.745-1.745a10.029 10.029 0 003.3-4.38 1.651 1.651 0 000-1.185A10.004 10.004 0 009.999 3a9.956 9.956 0 00-4.744 1.194L3.28 2.22zM7.752 6.69l1.092 1.092a2.5 2.5 0 013.374 3.373l1.091 1.092a4 4 0 00-5.557-5.557z"
+                        clip-rule="evenodd"
+                    >
+                    </path>
+
+                    <path
+                        d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z"
+                    >
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="p-2"></div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="rounded-full px-3 bg-gray-700">API</span>
+            <span class="rounded-full px-3 bg-gray-700">selenium</span>
+            <span class="rounded-full px-3 bg-gray-700">fastify</span>
+            <span class="rounded-full px-3 bg-gray-700">node.js</span>
+        </div>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            A backend service that scrapes mobile data prices in a configurable
+            manner with a JSON config.
+        </p>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            The config describes the pages of a mobile data dashboard website.
+            It contains login credentials, conditions that determine if a page
+            is finished loading, and query selectors for certain elements that
+            contain scraping data.
         </p>
     </div>
 </div>
@@ -295,10 +303,10 @@ import GithubIcon from "../components/GithubIcon.astro";
         <div class="p-2"></div>
 
         <p class="text-gray-400">
-            Vote for the new leaders of a student council organization,
-            intended for my school's campaign. Eventually, well over 300
-            students partaked. This project also includes a simple CDN for
-            serving images.
+            Vote for the new leaders of a student council organization, intended
+            for my school's campaign. In the end, well over 300 students
+            partaked. This project also includes a simple CDN for serving
+            images.
         </p>
 
         <div class="p-2"></div>
